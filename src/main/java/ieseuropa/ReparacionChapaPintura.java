@@ -6,7 +6,8 @@ public class ReparacionChapaPintura extends Reparacion {
 		super(id, descripcion);
 	}
 	
-	private float calcularPrecio() {
+	@Override
+	public float calcularPrecio() {
 		return ((getPrecio() * getHoras()) + getPrecioMaterial()) * 1.3f;
 	}
 

@@ -73,7 +73,7 @@ public class Trabajo {
 				+ "\nEl precio del trabajo es " + (Math.round((calcularPrecio()) * 100.0) / 100.0) + "€";
 	}
 
-	private float calcularPrecio() {
+	public float calcularPrecio() {
 		return 0;
 	}
 

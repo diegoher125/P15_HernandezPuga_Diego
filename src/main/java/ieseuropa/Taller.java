@@ -59,7 +59,7 @@ public class Taller {
 	}
 	
 	private boolean isIdCorrecto(int id) {
-		if(id < trabajos.size() || id > 0) {
+		if(id < trabajos.size() && id > 0) {
 			return true;
 		}else {
 			return false;

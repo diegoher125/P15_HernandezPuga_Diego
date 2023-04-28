@@ -6,7 +6,8 @@ public class ReparacionMecanica extends Reparacion {
 		super(id, descripcion);
 	}
 	
-	private float calcularPrecio() {
+	@Override
+	public float calcularPrecio() {
 		return ((getPrecio() * getHoras()) + getPrecioMaterial()) * 1.1f;
 	}
 

@@ -32,7 +32,7 @@ public class P15_HernandezPuga_Diego {
 					+ "\n4. Finalizar trabajo"
 					+ "\n5. Muestra trabajo");
 			menuPrincipal(taller, opcion);
-		}while(opcion > 0 || opcion < 6);
+		}while(opcion > 0 && opcion < 6);
 	}
 	
 	private static void menuPrincipal(Taller taller, int opcion) {

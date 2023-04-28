@@ -10,7 +10,8 @@ public class Revision extends Trabajo {
 		return "ERROR: El trabajo no es una reparacion";
 	}
 	
-	private float calcularPrecio() {
+	@Override
+	public float calcularPrecio() {
 		return 20;
 	}
 
