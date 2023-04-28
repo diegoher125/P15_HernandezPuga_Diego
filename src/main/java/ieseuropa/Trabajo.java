@@ -6,14 +6,12 @@ public class Trabajo {
 	private String descripcion;
 	private boolean finalizado;
 	private int horas;
-	private float precio;
 
 	public Trabajo(int id, String descripcion) {
 		this.id = id;
 		this.descripcion = descripcion;
 		this.finalizado = false;
 		this.horas = 0;
-		this.precio = 30;
 	}
 
 	public int getId() {
@@ -48,14 +46,6 @@ public class Trabajo {
 		this.horas = horas;
 	}
 
-	public float getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(float precio) {
-		this.precio = precio;
-	}
-
 	public String finalizar() {
 		if (!finalizado) {
 			finalizado = true;
@@ -64,27 +54,27 @@ public class Trabajo {
 			return "ERROR: El trabajo ya esta finalizado";
 		}
 	}
-	
+
 	public String aumentarHoras(int horas) {
 		if (!finalizado) {
 			this.horas += horas;
-			return "Horas aumentadas";
+			return "That’s right!";
 		} else {
 			return "ERROR: El trabajo ya esta finalizado";
 		}
 	}
-	
+
 	public String aumentarCostePiezas(float coste) {
-			return "";
+		return "";
 	}
 
 	public String muestra() {
 		return "El identificador es " + id + "\nLa descripcion es: " + descripcion + muestraFin()
-		+ "\nEl precio del trabajo es " + (Math.round((calcularPrecio()) * 100.0) / 100.0) + "€";
+				+ "\nEl precio del trabajo es " + (Math.round((calcularPrecio()) * 100.0) / 100.0) + "€";
 	}
 
 	private float calcularPrecio() {
-		return precio * horas;
+		return 0;
 	}
 
 	private String muestraFin() {
@@ -107,7 +97,7 @@ public class Trabajo {
 	@Override
 	public String toString() {
 		return "Trabajo [id=" + id + ", descripcion=" + descripcion + ", finalizado=" + finalizado + ", horas=" + horas
-				+ ", precio=" + precio + "]";
+				+ "]";
 	}
 
 }

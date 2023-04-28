@@ -11,7 +11,7 @@ public class Revision extends Trabajo {
 	}
 	
 	private float calcularPrecio() {
-		return getPrecio() + 20;
+		return 20;
 	}
 
 }
