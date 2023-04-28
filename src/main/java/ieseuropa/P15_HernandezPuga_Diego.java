@@ -82,6 +82,7 @@ public class P15_HernandezPuga_Diego {
 		// TODO Auto-generated method stub
 		Taller taller = new Taller();
 		inicio(taller);
+		System.out.println("Adios!");
 	}
 
 }
